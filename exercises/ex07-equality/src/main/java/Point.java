@@ -76,7 +76,6 @@ public class Point {
    */
   @Override
   public int hashCode() {
-    // TODO: Objects.hash(x, y) is an easy way to combine the fields.
-    return 0;
+    return Objects.hash(x,y);
   }
 }
