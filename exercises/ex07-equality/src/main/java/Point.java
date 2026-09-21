@@ -47,7 +47,7 @@ public class Point {
   @Override
   public String toString() {
     // TODO
-    return "";
+    return "(" + x + ", " + y +")";
   }
 
   /**
