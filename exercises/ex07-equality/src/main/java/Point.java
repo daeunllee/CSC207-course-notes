@@ -60,7 +60,12 @@ public class Point {
   public boolean equals(Object o) {
     // TODO: check that o is a Point (use `instanceof`), cast it, and compare
     //       the x and y fields.
-    return false;
+    if (o instanceof Point) {
+      Point newO = (Point) o;
+      return (newO.x == x) && (newO.y == y);
+    }
+    else
+      return false;
   }
 
   /**
