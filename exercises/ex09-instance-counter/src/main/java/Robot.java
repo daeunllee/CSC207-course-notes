@@ -38,8 +38,7 @@ public class Robot {
    * @return the shared Robot count
    */
   public static int getCount() {
-    // TODO
-    return 0;
+    return count;
   }
 
   /**
