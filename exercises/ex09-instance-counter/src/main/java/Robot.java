@@ -47,8 +47,7 @@ public class Robot {
    * @return this Robot's id
    */
   public int getId() {
-    // TODO
-    return 0;
+    return this.id;
   }
 
   /**
