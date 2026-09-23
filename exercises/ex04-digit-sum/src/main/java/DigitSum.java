@@ -32,7 +32,7 @@ public class DigitSum {
                 continue;
             }
             int temp = Integer.parseInt(String.valueOf(str.charAt(i)));
-            if (temp < 0) {
+            if (negative) {
                 temp *= -1;
             }
             sum += temp;
