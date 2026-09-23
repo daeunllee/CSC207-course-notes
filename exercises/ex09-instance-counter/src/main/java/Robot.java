@@ -56,7 +56,6 @@ public class Robot {
    * @return this Robot's name
    */
   public String getName() {
-    // TODO
-    return null;
+    return this.name;
   }
 }
