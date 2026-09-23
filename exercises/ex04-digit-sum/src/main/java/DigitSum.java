@@ -34,6 +34,7 @@ public class DigitSum {
             int temp = Integer.parseInt(String.valueOf(str.charAt(i)));
             if (negative) {
                 temp *= -1;
+                negative = false;
             }
             sum += temp;
             i++;
