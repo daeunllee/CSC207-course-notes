@@ -39,7 +39,9 @@ public class Aliasing {
      * @param amount the value to add to each element
      */
     public static void addInPlace(int[] arr, int amount) {
-        // TODO: complete
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] += amount;
+        }
     }
 
     /**
