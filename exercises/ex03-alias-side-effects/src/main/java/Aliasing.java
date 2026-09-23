@@ -53,7 +53,7 @@ public class Aliasing {
      * @return a new array of the same length, each element increased by amount
      */
     public static int[] addCopy(int[] arr, int amount) {
-        int[] arr2 = new int[arr.lengtha];
+        int[] arr2 = new int[arr.length];
         for (int i = 0; i < arr.length; i++) {
             arr2[i] = arr[i] + amount;
         }
