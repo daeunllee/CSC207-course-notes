@@ -26,6 +26,11 @@ public class DigitSum {
         int i = 0;
         boolean negative = false;
         while (i < str.length()) {
+            if (str.charAt(i) == '-')
+            {
+                negative = true;
+                continue;
+            }
             int temp = Integer.parseInt(String.valueOf(str.charAt(i)));
             if (temp < 0) {
                 temp *= -1;
