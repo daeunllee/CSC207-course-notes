@@ -27,7 +27,7 @@ public class DigitSum {
         while (i < str.length()) {
             if (str.charAt(i) == '-')
             {
-                negative = true;
+                i++;
                 continue;
             }
             int temp = Integer.parseInt(String.valueOf(str.charAt(i)));
