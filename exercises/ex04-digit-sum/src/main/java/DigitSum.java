@@ -24,7 +24,6 @@ public class DigitSum {
         String str = String.valueOf(n);
         int sum = 0;
         int i = 0;
-        boolean negative = false;
         while (i < str.length()) {
             if (str.charAt(i) == '-')
             {
