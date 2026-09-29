@@ -18,7 +18,7 @@ public class Box<T> {
    * @param item the value to store
    */
   public void set(T item) {
-    // TODO: store item in this box's field (mind the shadowing — use `this`).
+    this.item = item;
   }
 
   /**
