@@ -36,8 +36,7 @@ public class Box<T> {
    * @return true iff no item has been stored
    */
   public boolean isEmpty() {
-    // TODO
-    return false;
+    return item == null;
   }
 
   /**
