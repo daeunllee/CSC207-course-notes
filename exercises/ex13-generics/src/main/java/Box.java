@@ -27,8 +27,7 @@ public class Box<T> {
    * @return the stored value
    */
   public T get() {
-    // TODO
-    return null;
+    return item;
   }
 
   /**
