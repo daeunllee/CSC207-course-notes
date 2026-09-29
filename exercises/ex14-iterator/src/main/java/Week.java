@@ -32,6 +32,27 @@ public class Week implements Iterable<String> {
     return days[i];
   }
 
+  public class weekIterator implements Iterator<String>
+  {
+    private int currentPos = 0;
+
+    @Override
+    public boolean hasNext()
+    {
+       return currentPos < days.length;
+    }
+
+    @Override
+    public String next()
+    {
+      if (!hasNext())
+          throw new NoSuchElementException();
+      String nextDay = days[currentPos];
+      currentPos++;
+      return nextDay;
+    }
+  }
+
   @Override
   public Iterator<String> iterator() {
     // TODO: return an Iterator<String> that yields days[0], days[1], ... in
