@@ -40,9 +40,12 @@ public class Gotchas {
    * @return a copy whose inner arrays are also copies (nothing shared with grid)
    */
   public static int[][] deepCopy(int[][] grid) {
-    // TODO: build a new outer array and copy EACH inner array too, so that
-    //       nothing is shared with `grid`.
-    return grid.clone();
+    int[][] gridCopy = new int[grid.length][];
+    for (int i = 0; i < grid.length; i++)
+    {
+      gridCopy[i] = grid[i].clone();
+    }
+    return gridCopy;
   }
 
   /**
