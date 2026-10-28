@@ -1,5 +1,6 @@
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 /**
  * Exercise (Chapter 7: Collections) — making a class {@code Iterable}.

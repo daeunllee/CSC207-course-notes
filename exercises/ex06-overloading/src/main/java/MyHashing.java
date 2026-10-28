@@ -29,6 +29,7 @@ public class MyHashing {
    */
   public MyHashing(int seed) {
     // TODO: store the parameter in this object's seed field.
+    this.seed = seed;
   }
 
   /**
@@ -38,8 +39,9 @@ public class MyHashing {
    * @return the seed value from before this call
    */
   public int hash(int value) {
-    // TODO
-    return 0;
+    int prevSeed = seed;
+    seed = value;
+    return prevSeed;
   }
 
   /**
@@ -51,8 +53,10 @@ public class MyHashing {
    * @return (previous seed + value) % MODULO
    */
   public int hash(char value) {
-    // TODO
-    return 0;
+    int prevSeed = seed;
+    seed = value;
+
+    return (prevSeed + seed) % MODULO;
   }
 
   /**
