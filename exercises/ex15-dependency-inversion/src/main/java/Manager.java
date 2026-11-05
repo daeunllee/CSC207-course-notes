@@ -27,10 +27,8 @@
  * section, which this exercise is based on).
  */
 public class Manager {
-
-  // TODO: the type of this field is the problem — it names a concrete class
-  //       rather than the abstraction. Change it to IWorker.
-  private Worker worker;
+  
+  private IWorker worker;
 
   /**
    * Sets the worker that this manager manages.
