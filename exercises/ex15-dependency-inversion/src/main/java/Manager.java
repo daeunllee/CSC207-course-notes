@@ -36,9 +36,8 @@ public class Manager {
    * @param worker the worker to manage
    */
   public void setWorker(IWorker worker) {
-    // TODO: store the worker that was passed in, instead of ignoring it and
-    //       hard-coding a new Worker.
-    this.worker = new Worker();
+
+    this.worker = worker;
   }
 
   /**
