@@ -27,7 +27,7 @@
  * section, which this exercise is based on).
  */
 public class Manager {
-  
+
   private IWorker worker;
 
   /**
